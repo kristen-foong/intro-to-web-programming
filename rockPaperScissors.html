@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>Rock Paper Scissors</title>
+        <meta charset="utf-8">
+        <script>
+            function rPS(){
+                let choice = prompt("Rock, paper, or scissors?");
+                choice = choice.toLowerCase();
+                let comp = Math.floor(Math.random()*3);
+                document.getElementById("playAgain").innerHTML = "";
+                if(choice.substr(0,1) == "r"){
+                    document.getElementById("output").innerHTML += "User: Rock. ";
+                    if(comp == 0){
+                        document.getElementById("output").innerHTML += "Comp: Rock. You tied.<p>";
+                    }else if(comp == 1){
+                        document.getElementById("output").innerHTML+= "Comp: Paper. You lost.<p>";
+                    }else if(comp == 2){
+                        document.getElementById("output").innerHTML += "Comp: Scissors. You won!<p>";
+                    }
+                }else if(choice.substr(0,1) == "p"){
+                    document.getElementById("output").innerHTML += "User: Paper. ";
+                    if(comp == 0){
+                        document.getElementById("output").innerHTML += "Comp: Rock. You won!<p>";
+                    }else if(comp == 1){
+                        document.getElementById("output").innerHTML += "Comp: Paper. You tied.<p>";
+                    }else if(comp == 2){
+                        document.getElementById("output").innerHTML += "Comp: Scissors. You lost.<p>";
+                    }
+                }else if(choice.substr(0,1) == "s"){
+                    document.getElementById("output").innerHTML += "User: Scissors. ";
+                    if(comp == 0){
+                        document.getElementById("output").innerHTML += "Comp: Rock. You lost.<p>";
+                    }else if(comp == 1){
+                        document.getElementById("output").innerHTML += "Comp: Paper. You won!<p>";
+                    }else if(comp == 2){
+                        document.getElementById("output").innerHTML += "Comp: Scissors. You tied.<p>";
+                    }
+                }else{
+                    alert("Improper input. Try again.");
+                    rPS();
+                }
+                document.getElementById("playAgain").innerHTML = "Play again?";
+            }
+        </script>
+    </header>
+    <body>
+        <h1>Rock Paper Scissors</h1>
+        <p id="output"></p>
+        <p id="playAgain"></p>
+        <button onclick="rPS()">let's play</button>
+    </body>
+</html>

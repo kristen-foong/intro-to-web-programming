@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assignment 1: Noses and Feet</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h1>Assignment 1: Noses and Feet</h1>
+
+		<div id="output"> 
+			<!-- leave this div empty!-->
+		</div>
+		
+		<script>
+			//use a variable to access the div element
+			let myDiv = document.getElementById("output");
+
+			//Ask the user to enter the number of people and number of pets
+            let people = prompt("Enter the number of people");
+            let pets = prompt("Enter the number of (4-legged) pets");
+            
+            people = Number(people);
+            pets = Number(pets);
+
+			//Calculate the number of noses/feet
+            let noses = people + pets;
+            let feet = 2*people + 4*pets;
+
+			//Display the output	
+			myDiv.innerHTML = "There are " + noses + " noses and " + feet + " feet";
+
+		</script>
+	</body>
+</html>

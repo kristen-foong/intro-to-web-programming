@@ -1,0 +1,27 @@
+<script>
+function isPalindrome(){
+    let phrase = prompt("Enter a string: ");
+    let length = phrase.length - 1;
+    for(let i = 0; i < phrase.length; i++){
+        if(length == i){
+            break;
+        }
+        if(phrase.charAt(i) == phrase.charAt(length)){
+            length--;
+        }
+    }
+}
+
+function rightIsPalindrome(){
+    let input = prompt("Enter");
+    let curr, reverse = "";
+    for(curr - input.length-1; curr >= 0; curr--){
+        reverse += input.charAt(curr);
+    }
+    if(reverse === input){
+        alert("This is a palindrome");
+    }else{
+        alert("This is not a palindrome");
+    }
+}
+</script>

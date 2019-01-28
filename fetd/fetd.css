@@ -1,0 +1,82 @@
+@font-face{
+    font-family:'fe';
+    src:url('Fire_Emblem_Heroes_Font.ttf') format('truetype');
+}
+
+body {
+    background:#fff;
+    margin:0px;
+}
+h1{
+    font-size:50px;
+    text-align:center;
+    text-transform:uppercase;
+    color:#ffcc00;
+    font-family:'Press Start 2P';
+    line-height:100%;
+    padding:10px;
+    margin:0px;
+}
+
+#wrapper {
+    width:840px;
+    margin:0 auto;
+}
+
+#tdCanvas {
+    border:5px solid #444;
+}
+
+footer {
+    padding:20px 0px 20px 0px;
+    font-family:'Arial';
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-align:center;
+    clear:right;
+}
+
+#button1{
+    background:#EBC95B;
+    border:1px solid #DBBC56;
+    border-radius:5px;
+    padding:5px 10px 5px 10px;
+    text-align:center;
+    font-family:'Press Start 2P';
+    font-weight:bold;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin:5px 2px 5px 2px;
+}
+#button1:hover {
+    background:#C9A940;
+}
+#button1:focus{
+    background:#967814;
+}
+
+#buttons {
+    float:right;
+}
+
+#lives {
+    font-family:'Press Start 2P';
+    font-size:10px;
+    font-weight:bold;
+    text-transform:uppercase;
+    line-height:100%;
+    margin:5px 20px 5px 2px;
+    float:left;
+}
+
+#gold{
+    font-family:'Press Start 2P';
+    font-size:10px;
+    text-transform:uppercase;
+    color:#000;
+    font-weight:bold;
+    margin:5px 20px 5px 2px;
+    float:left;
+}

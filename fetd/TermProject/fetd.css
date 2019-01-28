@@ -1,0 +1,153 @@
+@font-face{
+    font-family:'fe';
+    src:url('http://files.jcink.net/uploads/jt/FOT_ChiaroStd_B.otf') format('opentype');
+}
+
+body {
+    background:url(https://vignette.wikia.nocookie.net/nintendo/images/e/e8/Fire_Emblem_Heroes_-_Background_08.png/revision/latest?cb=20180123005630&path-prefix=en);
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+    margin:0px;
+}
+h1{
+    font-size:50px;
+    text-align:center;
+    text-transform:uppercase;
+    color:#ffcc00;
+    font-family:'fe';
+    line-height:100%;
+    padding:10px;
+    margin:0px;
+}
+
+#wrapper {
+    width:1000px;
+    margin:0 auto;
+    position:relative;
+    padding:20px 20px 0px 20px;
+}
+
+#tdCanvas {
+    border:5px solid #444;
+    margin:2px;
+}
+
+footer {
+    padding:0px 0px 10px 0px;
+    font-family:'Arial';
+    font-size:8px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    text-align:center;
+    clear:right;
+    margin:0px;
+}
+
+#button1{
+    background:#EBC95B;
+    border:1px solid #DBBC56;
+    border-radius:5px;
+    padding:5px 10px 5px 10px;
+    text-align:center;
+    font-family:'fe';
+    font-weight:bold;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    margin:5px 2px 5px 2px;
+    width:150px;
+    position:relative;
+    overflow:hidden;
+}
+#button1:hover {
+    background:#C9A940;
+}
+#button1:focus{
+    background:#967814;
+}
+
+#buttons {
+    position:absolute;
+    top:50px; left:890px;
+    display:block;
+    width:300px;
+}
+
+#lives {
+    font-family:'fe';
+    font-size:15px;
+    text-transform:uppercase;
+    color:#000;
+    font-weight:bold;
+    margin:5px 20px 5px 2px;
+}
+
+#gold{
+    font-family:'fe';
+    font-size:20px;
+    text-transform:uppercase;
+    color:#000;
+    font-weight:bold;
+    margin:5px 20px 5px 2px;
+    width:130px;
+    text-align:right;
+    background:#EBC95B;
+    border-radius:5px;
+    padding:5px 10px 5px 10px;
+}
+
+#fps {
+    font-family:'fe';
+    font-size:10px;
+    text-transform:uppercase;
+    color:#000;
+    font-weight:bold;
+    margin:0px 20px 2px 5px;
+}
+
+#wave {
+    font-family:'fe';
+    font-size:15px;
+    text-transform:uppercase;
+    color:#000;
+    font-weight:bold;
+    margin:5px 20px 5px 2px;
+}
+
+#stats {
+    position:relative;
+    display:flex;
+    line-height:100%;
+}
+
+
+#desc {
+    position:absolute;
+    left:170px; top:5px;
+    border:1px solid #000;
+    padding:10px;
+    border-radius:5px;
+    background:#fff;
+    font-family:'fe';
+    font-size:12px;
+    opacity:0;
+    width:150px;
+}
+
+#archer:hover #desc {
+    opacity:1;
+}
+
+#magic:hover #desc{
+    opacity:1;
+}
+
+#ice:hover #desc{
+    opacity:1;
+}
+
+#fire:hover #desc{
+    opacity:1;
+}
+

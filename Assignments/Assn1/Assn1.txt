@@ -1,0 +1,116 @@
+CPSC 1045
+Assignment 1
+
+2. true || false && true
+Steps:
+true || true
+true
+
+3. let firstName = "trouble";
+let lastName = "double";
+(firstName === "Batman" || firstName === "Trouble" ) && (lastname === "Batman" || lastName === "kong");
+Steps:
+(false || firstName === "Trouble") && (lastname == "Batman" || lastName === "kong");
+(false || false) && (lastname == "Batman" || lastName === "kong");
+(false || false) && (false || lastName === "kong");
+(false || false) && (false || true);
+false && true
+false
+
+4. let a = 21;
+a += 3;
+var b = 5;
+b -= a;
+(a < 1) || (b >= 1) && (a != b)
+Steps:
+(24 < 1) || (b >= 1) && (a != b)
+(24 < 1) || (-19 >= 1) && (a != b)
+(24 < 1) || (-19 >= 1) && (24 != b)
+(24 < 1) || (-19 >= 1) && (24 != -19);
+false || (-19 >= 1) && (24 != -19);
+false || (false) && (24 != -19);
+false || false && true
+false || false
+false
+
+5. let pet = "alligator";
+let escape = "boat";
+"The " + pet + " escaped. It was last seen on a " + escape;
+Steps:
+"The " + "alligator" + " escaped. It was last seen on a " + escape;
+"The " + "alligator" + " escaped. It was last seen on a " + "boat";
+"The alligator escaped. It was last seen on a boat"
+
+6. let George = "orge";
+let nickname = "Conquerer";
+let combinedName = George + " " + nickname;
+(combinedName === George) || (George !== "George") && (combinedName === "Conquerer") || (nickname ===42)
+Steps:
+combinedName = "orge" + " " + "Conquerer";
+combinedName = "orge Conquerer";
+("orge Conquerer" === "orge") || ("orge" !== "George") && ("orge Conquerer" === "Conquerer") || ("Conquerer" === 42);
+(false || ("orge" !== "George") && ("orge Conquerer" === "Conquerer") || ("Conquerer" === 42);
+(false || true && ("orge Conquerer" === "Conquerer") || ("Conquerer" === 42);
+(false || true && false || ("Conquerer" === 42);
+false || true && false || false
+false || false || false
+false || false
+false
+
+7. ((42 === "42") && (42 == "42")) || ((42 < "Whistle") || (42 > "234"))
+Steps:
+((false && (42 == "42")) || ( 42 < "Whistle") || (42 > "234"));
+((false && true) || (42 < "Whistle") || (42 > "234"));
+((false && true) || (false || (42 > "234"));
+(false && true) || (false || false);
+false || (false || false)
+false || false
+false
+
+8. ((24*23+12/2+22) % 2 === 1)
+Steps:
+((552 + 12/2 + 22) % 2 === 1);
+((552 + 6 + 22) % 2 === 1)
+(580 % 2 === 1)
+0 === 1
+false
+
+9. ((Math.pow(3,3) === 27) || (Math.cos(Math.PI) === 0)) || (Math.pow(Math.sin(1.2,1)+Math.pow(Math.cos(1.2) === 1)
+Steps:
+((3^3 === 27) || (cos(PI) === 0)) || (sin(1.2)^1 + cos(1.2)^2 === 1)
+((27 === 27) || (cos(PI) === 0) || (sin(1.2) + cos(1.2)^2 === 1)
+((27 === 27) || (0 === 0) || (sin(1.2) + cos(1.2)^2 === 1)
+((27 === 27) || (0 === 0) || (0.9820390859672263 + cos(1.2)^2 === 1)
+((27 === 27) || (0 === 0) || (0.9820390859672263 + 2 === 1)
+(true || (0 === 0) || (0.9820390859672263 + 2 === 1)
+(true || true) || (0.9320390859672263 + 2 === 1)
+(true || true) || (2.9320390859672263 === 1)
+(true || true) || false
+true || false
+true
+
+10. let sentence = "The world is green!";
+sentence.substring(4,9) === "world" && sentence.length < 20 && sentence.length > 5 && sentence.substring(0,3) === "The world is red".substring(0,3);
+"world" === "world" && sentence.length < 20 && sentence.length > 5 && sentence.substring(0,3) === "The world is red".substring(0,3);
+"world" === "world" && 19 < 20 && sentence.length > 5 && sentence.substring(0,3) === "The world is red".substring(0,3);
+"world" === "world" && 19 < 20 && 19 > 5 && sentence.substring(0,3) === "The world is red".substring(0,3);
+"world" === "world" && 19 < 20 && 19 > 5 && "The"  === "The world is red".substring(0,3);
+"world" === "world" && 19 < 20 && 19 > 5 && "The" === "The";
+true && 19 < 20 && 19 > 5 && "The" === "The";
+true && true && 19 > 5 && "The" === "The";
+true && true && true && "The" === "The";
+true && true && true && true
+true && true && true
+true && true
+true
+
+11. let bigCar = true;
+let bearTrap;
+"The variable bigCar has the value: " + bigCar + ", while variable bearTrap is " + bearTrap + " If I compare beartrap with undefined I get " + bearTrap===undefined
+Steps:
+"The variable bigCar has the value: " + true + ", while  variable bearTrap is " + bearTrap + " If I compare bearTrap with undefined I get " + bearTrap === undefined;
+"The variable bigCar has the value: " + true + ", while  variable bearTrap is " + undefined + " If I compare bearTrap with undefined I get " + bearTrap === undefined;
+"The variable bigCar has the value: " + true + ", while  variable bearTrap is " + undefined + " If I compare bearTrap with undefined I get " + true;
+"The variable bigCar has the value: true, while variable bearTrap is " + undefined + " If I compare bearTrap with undefined I get " + true
+"The variable bigCar has the value: true, while variable bearTrap is undefined If I compare bearTrap with undefined I get " + true
+"The variable bigCar has the value: true, while variable bearTrap is undefined If I compare bearTrap with undefined I get true"

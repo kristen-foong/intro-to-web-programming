@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>An Example</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Put some output into the paragraph below</h1>
+        <p id="output">This is the initial text.</p>
+    </body>
+    
+    <script>
+//        let p = document.getElementById("output");
+//        let text = prompt("What would you like the paragraph to say?");
+//        p.innerHTML = text;
+        let p = prompt("Enter x");
+        let q = prompt("Enter y");
+        p = Number(p);
+        q = Number(q);
+        console.log("x + y = " + (p+q));
+        console.log("x to the power of y is " + Math.pow(p,q));
+    </script>
+    
+</html>

@@ -1,0 +1,63 @@
+<html>
+    <head>
+    <title>DEFENDER</title>
+        <meta charset="utf-8">
+        <link href="fetd.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <script src="fetd.js"></script>
+        <audio autoplay loop>
+            <source src="bgmusic.mp3" type="audio/mpeg">
+        </audio>
+    </head>
+    <body onload="setup()">
+        <div id="wrapper">
+            <div id="stats">
+                <div id="wave">wave: 1</div>
+                <div id="lives">lives: 50</div>
+            </div>
+            <canvas id="tdCanvas" width="840" height="780"></canvas>
+            <div id="buttons">
+                <div id="gold"></div>
+                <div id="archer"> 
+                    <button id="button1" onclick="createArrowTower()">Archer - 20G</button>
+                    <div id="desc">
+                        Average attack speed.
+                        <br>Average range.
+                        <br>Average damage.
+                    </div>
+                </div>
+                <div id="magic">
+                    <button id="button1" onclick="createMagicTower()">Magic - 25G</button>
+                    <div id="desc">
+                        Slow attack speed.
+                        <br>High range.
+                        <br>High damage.
+                    </div>
+                </div>
+                <div id="ice">
+                    <button id="button1" onclick="createIceTower()">Ice - 30G</button>
+                    <div id="desc">
+                        Fast attack speed.
+                        <br>Low range.
+                        <br>Low damage.
+                        <br>Slows enemies. Effect lasts for 3 seconds.
+                    </div>
+                </div>
+                <div id="fire">
+                    <button id="button1" onclick="createFireTower()">Fire - 20G</button>
+                    <div id="desc">
+                        Average attack speed.
+                        <br>Moderate damage.
+                        <br>Average range.
+                        <br>Applies burn to enemies. Effect lasts for 5 seconds.
+                    </div>
+                </div>
+            </div>
+            <div id="fps"></div>
+        </div>
+        <div id="debug"></div>
+    </body>
+    <footer>
+        &copy; 2018 Ana Wong &amp; Kristen Foong
+    </footer>
+</html>

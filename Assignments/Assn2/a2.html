@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Assignment 2: Money Matters</title>
+		<meta charset="utf-8">
+		<script src="a2.js"></script>
+	</head>
+
+	<body>
+		<h1>Assignment 2: Money Matters</h1>
+		
+		<h2>Annual Budget</h2>
+		
+		<h3>Every month I spend <span id="expTotal">-</span></h3>
+		<ul id="expenses">
+		</ul>
+		
+		<h3>Every month I make <span id="incTotal">-</span></h3>
+		<ul id="income">
+		</ul>			
+		
+		<h3>Annual Total: <span id="total">-</span></h3>
+		
+		<button onclick="addExpense()">Add Expense Item</button>
+		<button onclick="addIncome()">Add Income Item</button>
+
+        <h2>Need A Loan?</h2>
+        <h3 id="loan">You have not taken a loan.</h3>
+        
+        <button onclick="takeALoan()">Take A Loan</button>
+        
+	</body>
+</html>
